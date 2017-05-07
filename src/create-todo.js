@@ -4,11 +4,18 @@ import './App.css';
 export default class CreateTodo extends React.Component {
   render() {
     return (
-        <form>
-            <input type='text' placeholder='What do I need to do today?' />
+        <form onSubmit={this.handleCreate.bind(this)}>
+            <input type='text' placeholder='What do I need to do today?' ref="createInput"/>
             <button>Create</button>
         </form>
     );
+  }
+
+  handleCreate(event) {
+
+      event.preventDefault();
+
+      (console.log(this.refs.createInput))
   }
 }
 
