@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-export default class CreateTodo extends React.Component {
+export default class TodosList extends React.Component {
   render() {
     return (
         <form onSubmit={this.handleCreate.bind(this)}>
@@ -15,7 +15,7 @@ export default class CreateTodo extends React.Component {
       event.preventDefault();
 
       this.props.createTask(this.refs.createInput.value);
-      this.refs.createInput = '';
+      this.refs.createInput.value = '';
   }
 }
 
