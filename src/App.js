@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import CreateTodo from './create-todo';
 import TodosList from './todos-list';
+import _ from 'lodash';
 
-import logo from './logo.svg';
 import './App.css';
 
 const todos = [
@@ -30,10 +30,18 @@ class App extends Component {
       <div>
       <h1>ToDo</h1>
       <CreateTodo createTask={this.createTask.bind(this)} />
-      <TodosList todos={this.state.todos} />
+      <TodosList
+            todos={this.state.todos}
+            toggleTask={this.toggleTask.bind(this)} />
       </div>
     );
   }
+
+  toggleTask(task) {
+    const foundTodo = _.find(this.state.todos, todo => todo.task === task );
+    foundTodo.isCompleted = !foundTodo.isCompleted;
+    this.setState({ todos: this.state.todos });
+  };
 
   createTask(task) {
     this.state.todos.push({

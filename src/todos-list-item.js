@@ -15,13 +15,12 @@ export default class TodosListItem extends React.Component {
 
     const taskStyle = {
       color: isCompleted ? 'green' : 'red',
-      cursor: 'pointer',
-    }
+      cursor: 'pointer'
+    };
 
     return (
       <td style={taskStyle}
-          onClick={this.props.toggleTask.bind(this, task)}
-      >
+          onClick={this.props.toggleTask.bind(this, task)}>
           {task}
       </td>
     )
