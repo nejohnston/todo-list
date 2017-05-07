@@ -8,6 +8,7 @@ export default class TodosListItem extends React.Component {
                 <td>{this.props.task}</td>
                 <td>
                   <button>Edit</button>
+                  <button>Delete</button>
                 </td>
               </tr>
     );

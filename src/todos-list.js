@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import TodosListHeader from './todos-list-header';
+import TodosListItem from './todos-list-item';
 import logo from './logo.svg';
 import './App.css';
 
