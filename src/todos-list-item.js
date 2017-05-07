@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 
-export default class TodosListHeader extends React.Component {
+export default class TodosListItem extends React.Component {
   render() {
     return (
-          <thead>
               <tr>
-                  <th>Task</th>
-                  <th>Action</th>
+                <td>{this.props.task}</td>
+                <td>
+                  <button>Edit</button>
+                </td>
               </tr>
-          </thead>
     );
   }
 }
