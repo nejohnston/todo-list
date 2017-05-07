@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CreateTodo from './create-todo';
 import TodosList from './todos-list';
 
 import logo from './logo.svg';
@@ -26,8 +27,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
       <h1>ToDo</h1>
+      <CreateTodo />
       <TodosList todos={this.state.todos} />
       </div>
     );
