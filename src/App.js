@@ -27,8 +27,8 @@ class App extends Component {
 
   render() {
     return (
-      <div class="container">
-      <h1>Something Todo?</h1>
+      <div className="container">
+      <h1 className="header-wrapper">Something Todo?</h1>
       <CreateTodo createTask={this.createTask.bind(this)} />
       <TodosList
             todos={this.state.todos}

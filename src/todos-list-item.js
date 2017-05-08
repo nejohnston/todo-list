@@ -19,11 +19,11 @@ export default class TodosListItem extends React.Component {
 
     if (this.state.isEditing) {
       return (
-        <td>
+        <div>
           <form onSubmit={this.onSaveClick.bind(this)}>
             <input type="text" defaultValue={task} ref="editInput" />
           </form>
-        </td>
+        </div>
       )
     }
 
