@@ -12,12 +12,12 @@ export default class TodosList extends React.Component {
 
   render() {
     return (
-      <table>
+      <div>
         <TodosListHeader />
-        <tbody>
+        <div>
           {this.renderItems()}
-        </tbody>
-      </table>
+        </div>
+      </div>
     );
   }
 }
