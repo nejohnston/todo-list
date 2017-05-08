@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 export default class TodosListItem extends React.Component {
@@ -39,7 +39,7 @@ export default class TodosListItem extends React.Component {
     if (this.state.isEditing) {
       return (
         <td>
-          <button onClick={this.onSaveClick.bind(this)}>Save</button>
+          <button onClick={this.onSaveClick.bind(this, this.props)}>Save</button>
           <button onClick={this.onCancelClick.bind(this)}>Cancel</button>
         </td>
       );
@@ -48,7 +48,7 @@ export default class TodosListItem extends React.Component {
     return (
       <td>
         <button onClick={this.onEditClick.bind(this)}>Edit</button>
-        <button>Delete</button>
+        <button onClick={this.props.deleteTask.bind(this, this.props.task)}>Delete</button>
       </td>
     );
   }
@@ -70,9 +70,8 @@ export default class TodosListItem extends React.Component {
     this.setState({ isEditing: false });
   }
 
-  onSaveClick(event) {
+  onSaveClick() {
     event.preventDefault();
-
     const oldTask = this.props.task;
     const newTask = this.refs.editInput.value;
 
