@@ -1,6 +1,6 @@
 
 .container {
-  border: #42c2f4 solid 2px;
+  border: #2ec4db solid 2px;
   border-top-left-radius: 20px;
   max-width: 600px;
   margin-right: auto;
@@ -12,12 +12,28 @@
 
 .header-wrapper {
   border-top-left-radius: 18px;
-  background-color: #42c2f4;
+  background-color: #2ec4db;
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: .5rem;
   padding-top: .75rem;
   padding-bottom: .25rem;
   color: #fff;
+}
+
+/* Create Todo */
+
+.create-todo-form {
+  width: 600px;
+  height: 3rem;
+}
+
+.create-todo-input {
+  width: 85%;
+  height: 3rem;
+  font-size: 2rem;
+  border: none;
+  text-indent: 0.75rem;
 }
 
 @keyframes App-logo-spin {
