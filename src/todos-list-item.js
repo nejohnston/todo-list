@@ -28,37 +28,37 @@ export default class TodosListItem extends React.Component {
     }
 
     return (
-      <td style={taskStyle}
+      <div style={taskStyle}
           onClick={this.props.toggleTask.bind(this, task)}>
           {task}
-      </td>
+      </div>
     )
   }
 
   renderActionsSection() {
     if (this.state.isEditing) {
       return (
-        <td>
+        <div>
           <button onClick={this.onSaveClick.bind(this, this.props)}>Save</button>
           <button onClick={this.onCancelClick.bind(this)}>Cancel</button>
-        </td>
+        </div>
       );
     }
 
     return (
-      <td>
+      <div>
         <button onClick={this.onEditClick.bind(this)}>Edit</button>
         <button onClick={this.props.deleteTask.bind(this, this.props.task)}>Delete</button>
-      </td>
+      </div>
     );
   }
 
   render() {
     return (
-              <tr>
+              <div>
                 {this.renderTaskSection()}
                 {this.renderActionsSection()}
-              </tr>
+              </div>
     );
   }
 
@@ -71,7 +71,7 @@ export default class TodosListItem extends React.Component {
   }
 
   onSaveClick() {
-    event.preventDefault();
+    event.prevendivefault();
     const oldTask = this.props.task;
     const newTask = this.refs.editInput.value;
 
