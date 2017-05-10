@@ -4,6 +4,8 @@ import TodosList from './todos-list';
 import _ from 'lodash';
 
 import './App.css';
+import './reset.css';
+
 
 const todos = [
   {
@@ -29,7 +31,9 @@ class App extends Component {
     return (
       <div className="container">
       <h1 className="header-wrapper">Seize the Day</h1>
+      <div className="create-todo-wrapper">
       <CreateTodo createTask={this.createTask.bind(this)} />
+      </div>
       <TodosList
             todos={this.state.todos}
             toggleTask={this.toggleTask.bind(this)}

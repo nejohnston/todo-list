@@ -8,6 +8,21 @@
   margin-top: 2rem;
 }
 
+button {
+  border-radius: 0;
+  border: #2ec4db solid 1px;
+  color: #2ec4db;
+  width: 15%;
+  height: 100%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+::hover {
+  background-color: #2ec4db;
+  color: #fff;
+}
+
 /* Header */
 
 .header-wrapper {
@@ -23,20 +38,18 @@
 
 /* Create Todo */
 
+.create-todo-wrapper {
+  height: 3rem;
+}
 .create-todo-form {
   width: 600px;
-  height: 3rem;
+  height: 100%;
 }
 
 .create-todo-input {
-  width: 85%;
+  width: 80%;
   height: 3rem;
-  font-size: 2rem;
   border: none;
   text-indent: 0.75rem;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
