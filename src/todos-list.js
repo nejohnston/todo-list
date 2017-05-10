@@ -3,8 +3,8 @@ import _ from 'lodash';
 import TodosListHeader from './todos-list-header';
 import TodosListItem from './todos-list-item';
 
-import './App.css';
 import './reset.css';
+import './App.css';
 
 export default class TodosList extends React.Component {
   renderItems() {

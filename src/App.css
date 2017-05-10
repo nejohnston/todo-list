@@ -10,15 +10,16 @@
 
 button {
   border-radius: 0;
-  border: #2ec4db solid 1px;
+  border: #2ec4db solid 2px;
   color: #2ec4db;
   width: 15%;
   height: 100%;
+  outline: none;
   background-color: #fff;
   cursor: pointer;
 }
 
-::hover {
+button:hover {
   background-color: #2ec4db;
   color: #fff;
 }
@@ -39,17 +40,21 @@ button {
 /* Create Todo */
 
 .create-todo-wrapper {
-  height: 3rem;
+  /*height: 3rem;*/
 }
 .create-todo-form {
   width: 600px;
-  height: 100%;
+  height: 3rem;
 }
 
 .create-todo-input {
   width: 80%;
-  height: 3rem;
+  height: 100%;
   border: none;
   text-indent: 0.75rem;
+  border: #2ec4db solid 2px;
+  color: #2ec4db;
+  outline: none;
+  padding: 0;
 }
 

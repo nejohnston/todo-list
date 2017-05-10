@@ -3,8 +3,8 @@ import CreateTodo from './create-todo';
 import TodosList from './todos-list';
 import _ from 'lodash';
 
-import './App.css';
 import './reset.css';
+import './App.css';
 
 
 const todos = [

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './App.css';
 import './reset.css';
+import './App.css';
 
 
 export default class TodosListItem extends React.Component {

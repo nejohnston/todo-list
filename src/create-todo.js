@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
 import './reset.css';
+import './App.css';
 
 export default class TodosList extends React.Component {
   render() {
     return (
         <form className="create-todo-form" onSubmit={this.handleCreate.bind(this)}>
             <input className="create-todo-input" type='text' placeholder='What do I need to do today?' ref="createInput"/>
-            <button className="button-global">Create</button>
+            <button>Create</button>
         </form>
     );
   }
