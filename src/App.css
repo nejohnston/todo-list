@@ -58,3 +58,8 @@ button:hover {
   padding: 0;
 }
 
+.todo-items-header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25%;
+}
